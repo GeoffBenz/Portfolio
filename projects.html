@@ -1,0 +1,108 @@
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Projects</title>
+	<link rel="stylesheet" href="css/project.css">
+</head>
+<body>
+
+	<nav>
+	<ul>
+		<li><a href="index.html">Home </a></li>
+		<li><a href="about.html">About Me</a></li>
+		<li><a href="Projects.html">Projects</a></li>
+		<li><a href="contact.html">Contact</a></li>
+	</ul>
+	</nav>
+
+<section class="project">
+	<h1>PROJECTS</h1>
+	
+	<div class="project-grid">
+
+		<div class ="project-card">
+			<h2>Project 1</h2>
+
+			<div class="image">
+			
+
+			</div>
+			<p>Project description goes here. This is a placeholder for the project details and can be replaced with actual content.</p>	
+			<button onclick="openinfo()">more info</button>
+
+			<div id="docModal" class="modal">
+           	 <div class="modal-content">
+    			<span class="close" onclick="closeinfo()">&times;</span>
+    
+    			<iframe src="file/test.pdf" width="100%" height="875px"></iframe>
+			  </div>
+			</div>
+
+			<script>
+				function openinfo() {
+				document.getElementById("docModal").style.display = "block";
+				}
+
+				function closeinfo() {
+				document.getElementById("docModal").style.display = "none";
+				}
+			 </script>
+		</div>
+
+		<div class ="project-card">
+			<h2>Project 2</h2>
+
+			<div class="image">
+
+			</div>
+			<p>Project description goes here. This is a placeholder for the project details and can be replaced with actual content.</p>
+			<button>more info</button>
+
+		</div>
+
+		<div class ="project-card">
+			<h2>Project 3</h2>
+
+			<div class="image">
+
+			</div>
+			<p>Project description goes here. This is a placeholder for the project details and can be replaced with actual content.</p>
+			<button>more info</button>
+
+		</div>
+
+		<div class ="project-card">
+			<h2>Project 4</h2>
+
+			<div class="image">
+
+			</div>
+			<p>Project description goes here. This is a placeholder for the project details and can be replaced with actual content.</p>
+			<button>more info</button>
+
+		</div>
+
+		<div class ="project-card">
+			<h2>Project 5</h2>
+
+			<div class="image">
+			
+
+			</div>
+			<p>Project description goes here. This is a placeholder for the project details and can be replaced with actual content.</p>
+			<button>more info</button>
+
+		</div>
+
+	</div>
+
+</section>
+
+<footer>
+</footer>
+
+
+
+</body>
+</html>

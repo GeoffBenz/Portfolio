@@ -1,0 +1,162 @@
+body{
+	background: #000000;
+	color:#f5f5f5;
+	overflow-x: hidden;
+	margin: 0px;
+}
+
+.container{
+	flex: 1;
+	max-width: 100%;
+	margin:0px;
+	padding: 25px 30px;
+	background-color: #1e1e1e;
+	border-radius: 15px;
+	box-sizing: border-box;
+	box-shadow: 0  10px 15px rgba(91, 126, 145, 0.5);
+	
+	
+}
+
+/* naviagation */
+
+nav {
+	background-color: #232324;
+	padding:10px 30px;
+}
+
+nav ul{
+	list-style: none;
+	display: flex;
+	gap:30px;
+	padding: 0px;
+	margin: 0px;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+
+nav a:hover{
+	color: skyblue;
+}
+/*=== Main section ===*/
+.layout{
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: 30px;
+	padding: 40px;
+	align-items: stretch;
+}
+
+.layout .work-experience{
+	grid-column: span 2;
+}
+
+.education, .skills-preview{
+	display: flex;
+}
+
+/*=== education section ===*/
+.education h1{
+	border-bottom: 3px solid skyblue;
+	display: inline-block;
+}
+
+.education h2{
+	color: skyblue;
+	text-align: center;
+	border-bottom: 1px solid skyblue;
+}
+
+.education p{
+	font-size: 1.15rem;
+	margin: 10px;
+	line-height: 1.6;
+}
+
+/* ===== Skills Section ===== */
+
+.skills-preview {
+    color: white;
+    text-align: center;
+}
+
+.skills-preview h2 {
+    font-size: 2rem;
+    margin-bottom: 50px;
+    border-bottom: 3px solid skyblue;
+    display: inline-block;
+    padding-bottom: 10px;
+}
+
+.skills-preview h3{
+	border-bottom: 1px solid skyblue;
+	color: skyblue;
+
+}
+
+/* Grid Layout */
+.skills-grid {
+    display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 20px;
+}
+
+
+
+/* Individual Skill Item */
+.skill-item {
+    background-color: #1e293b;
+    padding: 15px 25px;
+    border-radius: 30px;
+    font-size: 0.95rem;
+    transition: all 0.3s ease;
+    border: 1px solid transparent;
+}
+
+/* Hover Effect */
+.skill-item:hover {
+    background-color: skyblue;
+    color: black;
+    transform: translateY(-4px);
+    border: 1px solid white;
+}
+
+/*=== work experience section ===*/
+.work-experience h1{
+	border-bottom: 3px solid skyblue;
+	display: inline-block;
+}
+.work-experience dl{
+	font-size: 1.15rem;
+	background: #1e2941;
+	padding: 15px 20px;
+	border-radius: 15px;
+	border-left: 4px solid skyblue;
+}
+
+.work-experience dt{
+	font-weight: bold;
+	margin-bottom: 5px;
+}
+
+.work-experience dd{
+	margin-left: 0px;
+	color: #ccc;
+}
+ 	
+/*=== footer ===*/
+
+footer{
+	background-color: #232324;
+	text-align: center;
+	width: 100%;
+	padding: 20px;
+	position: relative;
+    left: 0;
+    bottom: 0;
+}
